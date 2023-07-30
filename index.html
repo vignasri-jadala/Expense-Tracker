@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Expense Tracker</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="full-body">
+   <div class="title">Expense Tracker</div>
+    <div class="container">
+       <div class="expenses">
+       	<a class="buttons" href="#" onclick="add_expense_page()">Add Expense</a>
+       	<br>
+       	<div class="available-expenses">
+       		<div class="sub-title">Expenses</div>
+       		<table class="expense-table" cellpadding="8px 15px" cellspacing="15px">
+       			<tr style="border-bottom: 1px solid white;">
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Note</th>
+       			</tr>
+       		</table>
+       	</div>
+       	<form class="add-new-expense" action="#">
+       		<span>
+       			<label for="amount">Amount</label>
+       			<input type="text" name="amount" class="form-input" placeholder="How much?">
+       		</span>
+       		<span>
+       			<label for="category">Category:</label>
+       			<select id="category" name="category">
+       				<option value="food">Food</option>
+       				<option value="travel">Travel</option>
+       				<option value="groceries">Groceries</option>
+       				<option value="entertainment">Entertainment</option>
+       				<option value="others">Others</option>
+       			</select>
+
+       		</span>
+       		<span>
+       			<label for="date">Date:</label>
+       			<input type="date" placeholder="dd-mm-yyyy" name="date" class="form-input">
+       		</span>
+       		<span>
+       			<label for="note">Additional Notes:</label>
+       			<input type="text" name="note" placeholder="On what did you spend?" class="form-input">
+       		</span>
+       		<span>
+       			<a href="#" onclick="add_expense()" class="buttons" style="padding: 8px 10px;font-size: 15px;">Submit</a>
+       		</span>
+       	</form>
+       </div>
+       <div class="category">
+       	<a href="#" class="buttons" onclick="add_category_page()">Add Category</a>
+       	<br>
+       	<div class="sub-title">Categories</div>
+       	<div class="available-categories">
+       		<span>Food<span class="sum"></span></span>
+       		<span>Travel<span class="sum"></span></span>
+       		<span>Groceries<span class="sum"></span></span>
+       		<span>Entertainment<span class="sum"></span></span>
+       		<span>Others<span class="sum"></span></span>
+       </div>
+       <form action="#" class="add-categories">
+       	<span>
+       		<label for="category">Category Name:</label>
+       		<input type="text" name="new-category" placeholder="Enter Category Name" class="form-input">
+       	</span>
+       	<span>
+       		<a href="#" class="buttons" onclick="add_category()" style="font-size:15px;">Submit</a>
+       	</span>
+       </form>
+    </div>
+	</div>
+</div>
+</body>
+<script src="javascript.js"></script>
+</html>
