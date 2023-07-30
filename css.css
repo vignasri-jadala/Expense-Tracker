@@ -1,0 +1,94 @@
+body{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Open Sans;
+}
+.full-body{
+	font-size: 18px;
+	background-image: linear-gradient(to right top,#F3871A,#FE413E,#E56BEB,#FA42E4);
+	height: 1000px;
+}
+.title{
+	color: yellow;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+    padding:30px;
+
+}
+.container{
+	display:flex;
+	margin:30px;
+	justify-content: space-between;
+
+}
+.buttons{
+	text-decoration: none;
+	color:white;
+	font-size:25px;
+	background-color: #96158E;
+	padding: 5px 10px;
+	border-radius: 6px;
+}
+table{
+	background-color: #A90A59;
+	color:white;
+	border:2px solid white;
+	border-radius: 7px;
+    margin-top: 20px;
+}
+td{
+	font-size:15px;
+}
+.add-new-expense, .add-categories{
+margin-top:20px;
+background-color: #FE150E;
+color:white; 
+border-radius: 6px;
+border:1px solid black;
+padding: 15px;
+display:none;
+
+}
+.add-new-expense span, .add-categories span{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 8px 0px;
+	font-size: 15px;
+}
+.form-input,#category,.new-category{
+	background-color: #154896;
+	color: white;
+	border:1px solid white;
+	padding: 6px 6px;
+	border-radius: 5px;
+}
+.form-input:focus{
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.sub-title{
+	font-size: 23px;
+	margin-top: 30px;
+	color:white;
+}
+.available-categories span{
+display: flex;
+justify-content: center;
+align-items: center;
+border-bottom: 2px solid white;
+color: white;
+padding: 10px 10px;
+}
+.available-categories{
+	border: 1px solid white;
+	margin-top: 30px;
+	padding: 10px 10px;
+	background-color: #A90A59;
+}
